@@ -1,0 +1,18 @@
+$ sudo apt update
+
+$ sudo apt install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils
+
+$ sudo adduser ‘username’ libvirt // Type your user name in the place of username
+
+$ sudo adduser ‘[username]’ kvm // Here also write your username
+
+$ sudo systemctl status libvirtd
+
+Press Q
+if virtualization is not active use following command
+$sudo systemctl enable --now libvirtd
+
+$sudo apt install virt-manager
+
+$ sudo virt-manager
+Done follow the next steps
